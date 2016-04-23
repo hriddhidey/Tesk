@@ -71,9 +71,10 @@
     }
   }
 </script>
+action="writeTranslated()"
 -->
 
-  <form id="labnol" method="get" action="writeTranslated()">
+  <form id="labnol" method="get" >
       <img onclick="startDictation()" src="mic.png" />
   </form>
 
@@ -102,9 +103,9 @@
           //document.getElementById('translatedText').innerHTML = e.results[0][0].transcript;
           data = e.results[0][0].transcript;
           recognition.stop(); 
-      
+          writeTranslated()
           
-          document.getElementById('labnol').submit();
+          //document.getElementById('labnol').submit();
         }
         
         recognition.onerror = function(e) {
