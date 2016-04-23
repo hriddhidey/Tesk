@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body,section,header,article{
+	margin: 0 auto;
+	margin-top:20px;
+}
+
+section{
+	padding: 5pt;
+	width: 70%;
+}
+
+::selection {
+  background: #FFFF26; 
+}
+::-moz-selection {
+  background: #FFFF26; 
+}
+
+header {
+	font-family: 'Montserrat',sans-serif;
+	font-size: 2.2em;
+}
+
+p {
+	font-size: 1.2em;
+	font-family: 'Lora',serif;
+    color: #1F1F26;
+    line-height: 1.5;
+    margin: 1em 0;
+    margin-bottom: 0;
+}
+
+div:focus {
+	outline: none;
+}
+
+.btn {
+	margin-top: 10px;
+	font-family: 'Montserrat',serif;
+	background-color: #fff;
+	border: thin solid #eee;
+	border-radius: 20px;
+	padding: 10px;
+	outline: none;
+	transition: ease-in-out 0.5s;
+	-webkit-transition: ease-in-out 0.5s;
+}
+
+.btn:hover {
+	border: thin solid #fff;
+	background-color: #9C27B0;
+	color: #fff;
+}
+
+.first {
+	margin-top:20pt;
+}
