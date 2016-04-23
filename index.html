@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>Text Editing</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
   <script type="text/javascript" src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="js/medium-editor.js"></script>
   <link rel="stylesheet" href="css/medium-editor.css">
   <link rel="stylesheet" href="css/themes/default.css">
@@ -76,6 +77,49 @@
       <img onclick="startDictation()" src="mic.png" />
   </form>
 
+  <script type="text/javascript">
+  String data = '';
+
+    function startDictation() {
+
+      if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+        var recognition = new webkitSpeechRecognition();
+
+
+        
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        
+        
+        recognition.lang = "en-US";
+        recognition.start();
+        
+        recognition.onresult = function(e) {
+
+           //console.log('Hello.');
+          
+          //document.getElementById('translatedText').innerHTML = e.results[0][0].transcript;
+          data = e.results[0][0].transcript;
+          recognition.stop(); 
+      
+          
+          document.getElementById('labnol').submit();
+        }
+        
+        recognition.onerror = function(e) {
+          recognition.stop();
+          
+        }
+      }
+    }
+
+    function writeTranslated() {
+      document.getElementById("translated").innerHTML+=data;
+    }
+
+  </script>
+  
   <p id="translated"></p>
     
   <script>var editor = new MediumEditor('.editable');</script>
