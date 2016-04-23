@@ -1,5 +1,4 @@
 
-  <script type="text/javascript">
     String data = "";
 
     function startDictation() {
@@ -40,6 +39,5 @@
       document.getElementById("translated").innerHTML+=data;
     }
 
-  </script>
 
 //Kunzie, enter your code here.
