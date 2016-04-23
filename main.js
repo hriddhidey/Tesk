@@ -18,9 +18,9 @@
         
         recognition.onresult = function(e) {
 
-           //console.log('Hello.');
+          console.log('Hello.');
           
-          //document.getElementById('translatedText').innerHTML = e.results[0][0].transcript;
+          document.getElementById('translatedText').innerHTML = e.results[0][0].transcript;
           data = e.results[0][0].transcript;
           recognition.stop(); 
       
