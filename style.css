@@ -3,12 +3,7 @@
 
 body,section,header,article{
 	margin: 0 auto;
-	margin-top:20px;
-}
-
-section{
-	padding: 5pt;
-	width: 70%;
+	padding: 1em;
 }
 
 ::selection {
@@ -18,9 +13,30 @@ section{
   background: #FFFF26; 
 }
 
-header {
+header,h2,h3 {
+	margin: 0 auto;
 	font-family: 'Montserrat',sans-serif;
+	width: 70%;
+	text-align: center;
+}
+
+header {
 	font-size: 2.2em;
+	margin-top: 1em;
+}
+
+h2 {
+	font-size: 1.4em;
+	text-align: left;
+}
+
+h3 {
+	font-size: 1.2em;
+	text-align: left;
+}
+
+header:focus{
+	outline: none;
 }
 
 p {
@@ -28,8 +44,9 @@ p {
 	font-family: 'Lora',serif;
     color: #1F1F26;
     line-height: 1.5;
-    margin: 1em 0;
-    margin-bottom: 0;
+    margin: 0 auto;
+    width: 70%;
+    text-align: justify;
 }
 
 div:focus {
