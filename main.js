@@ -1,4 +1,4 @@
-var data = "";
+var data="";
 
 function startDictation() {
 
@@ -17,14 +17,14 @@ function startDictation() {
     
     recognition.onresult = function(e) {
 
-      console.log('Hello.');
+       //console.log('Hello.');
       
-      document.getElementById('translatedText').innerHTML = e.results[0][0].transcript;
+      //document.getElementById('translatedText').innerHTML = e.results[0][0].transcript;
       data = e.results[0][0].transcript;
       recognition.stop(); 
-  
+      writeTranslated()
       
-      document.getElementById('labnol').submit();
+      //document.getElementById('labnol').submit();
     }
     
     recognition.onerror = function(e) {
@@ -37,6 +37,3 @@ function startDictation() {
 function writeTranslated() {
   document.getElementById("translated").innerHTML+=data;
 }
-
-
-//Kunzie, enter your code here.
