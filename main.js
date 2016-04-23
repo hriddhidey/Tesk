@@ -1,5 +1,5 @@
 
-    String data = "";
+    var data = "";
 
     function startDictation() {
 
