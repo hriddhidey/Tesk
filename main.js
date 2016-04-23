@@ -37,3 +37,33 @@ function startDictation() {
 function writeTranslated() {
   document.getElementById("translated").innerHTML+=data;
 }
+
+
+ html file
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+
+<input type="file" id="openFile"/>
+<br>
+<pre id="fileContents"></pre>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
+
+js file
+
+document.getElementById("openFile").addEventListener('change',function(){
+	var fr=new FileReader();
+	fr.onload=function(){
+		document.getElementById("fileContents").textContent=this.result;
+	}
+	fr.readAsText(this.files[0]);
+})
+
+
+
+
+
