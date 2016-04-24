@@ -86,6 +86,7 @@ div:focus {
 #mic {
 	padding: 1em;
 	padding-top: 0;
+	margin-left: 5px;
 }
 
 .print {
@@ -100,7 +101,10 @@ div:focus {
 }
 
 .print:hover {
-	background-color: rgba(0,0,0,0);
+	/*background-color: rgba(0,0,0,0.5);*/
+	border : 1px solid #000;
+	color: #000;
+	cursor: pointer;
 }
 
 .print:focus {
