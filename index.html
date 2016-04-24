@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Text Editing</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script type="text/javascript" src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/medium-editor.js"></script>
+  <link rel="stylesheet" href="css/medium-editor.css">
+  <link rel="stylesheet" href="css/themes/default.css">
+
+
+</head>
+<body>
+  <div id="icon">
+    <form method="get" >
+        <img onclick="startDictation()" src="mic.png" width="40px" height="40px"/>
+    </form>
+  </div>
+
+  <header contenteditable="true" class="editable">This is the Heading </header> 
+
+  <div class="editable" contenteditable="true" spellcheck="true">
+    <p id="mainContent">
+      The entire content in this paragraph is editable. Feel free to explore and change the contents to your requirements. Simply start
+      typing at the end, start, or in the middle. <br />
+      You could also select a portion, or all of it, and rewrite it all.<br />
+      You can use <code>Ctrl+Z</code> to undo any mistakes you made while typing.<br />
+      Have fun!
+    </p>
+
+  </div>  
+
+
+
+  <p id="translated"></p>
+    
+  <script>var editor = new MediumEditor('.editable');</script>
+</body>
+</html>
