@@ -13,6 +13,7 @@ body,section,header,article{
   background: #FFFF26; 
 }
 
+
 header,h2,h3 {
 	margin: 0 auto;
 	font-family: 'Montserrat',sans-serif;
@@ -21,6 +22,7 @@ header,h2,h3 {
 }
 
 header {
+	display: inline-block;
 	font-size: 2.2em;
 	margin-top: 1em;
 }
@@ -71,6 +73,36 @@ div:focus {
 	color: #fff;
 }
 
-.first {
+#mainContent {
 	margin-top:20pt;
+}
+
+
+#icon {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+#mic {
+	padding: 1em;
+	padding-top: 0;
+}
+
+.print {
+	background-color: rgba(0,0,0,0);
+	border: 1px solid #ccc;
+	color: #ccc;
+	padding: 1em;
+	-webkit-transitions: ease-in-out 2s;
+	-moz-transitions: ease-in-out 2s;
+	-o-transitions: ease-in-out 2s;
+	transitions: ease-in-out 2s;
+}
+
+.print:hover {
+	background-color: rgba(0,0,0,0);
+}
+
+.print:focus {
+	outline: none;
 }

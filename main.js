@@ -38,13 +38,21 @@ function writeTranslated() {
 	
 	var check = "new para";
 	var n = data.localeCompare(check);
-	if(!n){
+	if(n==0){
 		data = "<br />";
 	}
 	else {
 		data = data.charAt(0).toUpperCase()+data.slice(1);
 		data = data.concat(". ");
-		document.getElementById("translated").innerHTML+=data;
+		document.getElementById("mainContent").innerHTML+=data;
 	}
 	
+}
+
+function createDoc(){
+	/*
+	** Print the file.
+	 *
+	 */
+	window.print();
 }
