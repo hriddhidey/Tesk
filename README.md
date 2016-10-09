@@ -1,5 +1,4 @@
 # Tesk 2.0
-Note: Kindly head to gh-pages branch for code.
 
 The aim of our platform is to provide creative individuals with a portal to express themselves in a distraction-free environment, without any hindrance, or unnecessary infringements. We like to keep the focus on the stuff that matters - the content, and the experience of writing your heart out. 
 Our writer is very intuitive to use for anybody and everybody who wants to, with a simple editing and formatting process.
