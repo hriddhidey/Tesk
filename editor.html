@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tesk Writer</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/medium-editor.js"></script>
+  <link rel="stylesheet" href="css/medium-editor.css">
+  <link rel="stylesheet" href="css/themes/default.css">
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+</head>
+<body>
+  <div id="icon">
+    <form method="get" >
+        <img id="mic" onclick="startDictation()" src="images/mic.png" width="43px" height="43px"/>
+    </form>
+    <button class="print" onclick="createDoc()">Save PDF</button>
+  </div>
+
+
+  <header contenteditable="true" class="editable">This is the Heading </header> 
+
+  <div class="editable" contenteditable="true" spellcheck="true">
+    <p id="mainContent">
+      The entire content in this paragraph is editable. Feel free to explore and change the contents to your requirements. Simply start
+      typing at the end, start, or in the middle. <br />
+      You could also select a portion, or all of it, and rewrite it all.<br />
+      You can use <code>Ctrl+Z</code> to undo any mistakes you made while typing.<br />
+      Also, you can click on the icon on the top left, to speak, and add to the existing content. Keep in mind, though, that the content may not
+      be formatted by default, and will need formatting.
+      <br />
+      Have fun!
+    </p>
+
+  </div>  
+
+
+  <script>var editor = new MediumEditor('.editable');</script>
+</body>
+</html>
