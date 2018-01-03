@@ -1,112 +1,73 @@
 @import url(https://fonts.googleapis.com/css?family=Lora);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+
+::selection {
+	background: #FFFF26; 
+}
+::-moz-selection {
+	background: #FFFF26; 
+}
+
 body,section,header,article{
 	margin: 0 auto;
 	padding: 1em;
 }
 
-::selection {
-  background: #FFFF26; 
-}
-::-moz-selection {
-  background: #FFFF26; 
-}
-
-
-header,h2,h3 {
-	margin: 0 auto;
-	font-family: 'Montserrat',sans-serif;
-	width: 70%;
-	text-align: center;
-}
-
-header {
-	display: inline-block;
-	font-size: 2.2em;
-	margin-top: 1em;
-}
-
-h2 {
-	font-size: 1.4em;
-	text-align: left;
-}
-
-h3 {
-	font-size: 1.2em;
-	text-align: left;
-}
-
-header:focus{
+*:focus {
 	outline: none;
+}
+
+h1, h2, h3 {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
 
 p {
-	font-size: 1.2em;
-	font-family: 'Lora',serif;
-    color: #1F1F26;
-    line-height: 1.5;
-    margin: 0 auto;
-    width: 70%;
-    text-align: justify;
+	margin: 5vw;
+	font-family: 'Lora', serif;
+	line-height: 1.5rem;
 }
 
-div:focus {
-	outline: none;
-}
-
-.btn {
-	margin-top: 10px;
-	font-family: 'Montserrat',serif;
+button {
+	flex: 0.5;
+	margin: 10px;
+	align-self: center;
 	background-color: #fff;
-	border: thin solid #eee;
-	border-radius: 20px;
-	padding: 10px;
-	outline: none;
-	transition: ease-in-out 0.5s;
-	-webkit-transition: ease-in-out 0.5s;
+	border: 1px solid #eee;
+	padding: 12px 20px 12px 20px;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: lighter;
+	font-size: 1em;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	color: #333;
+
+	transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-o-transition: 0.15s ease-in-out;
 }
 
-.btn:hover {
-	border: thin solid #fff;
-	background-color: #9C27B0;
-	color: #fff;
-}
-
-#mainContent {
-	margin-top:20pt;
-}
-
-
-#icon {
-	display: inline-block;
-	margin: 0 auto;
-}
-
-#mic {
-	padding: 1em;
-	padding-top: 0;
-	margin-left: 5px;
-}
-
-.print {
-	background-color: rgba(0,0,0,0);
-	border: 1px solid #ccc;
-	color: #ccc;
-	padding: 1em;
-	-webkit-transitions: ease-in-out 2s;
-	-moz-transitions: ease-in-out 2s;
-	-o-transitions: ease-in-out 2s;
-	transitions: ease-in-out 2s;
-}
-
-.print:hover {
-	/*background-color: rgba(0,0,0,0.5);*/
-	border : 1px solid #000;
-	color: #000;
+button:hover {
+	box-shadow: inset 150px 0 0 0 black;
+	color: #eee;
 	cursor: pointer;
 }
 
-.print:focus {
-	outline: none;
+button:focus {
+	outline: 0;
+}
+
+#buttons {
+	padding:15px;
+	margin:0 auto;
+	width: 90vw;
+	height: 5rem;
+	text-align: center;
+}
+
+.main {
+	width:80vw;
+	margin:0 auto;
 }

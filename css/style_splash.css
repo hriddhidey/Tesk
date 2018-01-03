@@ -10,76 +10,44 @@ body{
 	padding: 10px;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-[class*="col-"] {
-    float: left;
-    padding: 30px;
-    width: 100%;
-    display: inline-block;
-}
-
-.data {
-	padding-left: 40px;
-	padding-right: 40px;
-}
-
-@media only screen and (min-width: 768px) {
-    .col-1 {width: 8.33%;}
-	.col-2 {width: 16.66%;}
-	.col-3 {width: 25%;}
-	.col-4 {width: 33.33%;}
-	.col-5 {width: 41.66%;}
-	.col-6 {width: 50%;}
-	.col-7 {width: 58.33%;}
-	.col-8 {width: 66.66%;}
-	.col-9 {width: 75%;}
-	.col-10 {width: 83.33%;}
-	.col-11 {width: 91.66%;}
-	.col-12 {width: 100%;}
-}
-
-p {
-	font-family: 'Lora',serif;
-	line-height: 1.5em;
-	text-align: justify;
-}
-
-h1{
-	margin: 0 auto;
-	margin-top: 5vw;
+section {
+	width: 90vw;
+	margin: 5rem auto;
 	text-align: center;
-	font-size: 6em;
-	font-weight: bold;
-	font-family: 'Montserrat',serif;
-	background-image: url("../images/desk.jpg");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
-
-h2 {
-	margin: 0 auto;
-	text-align: center;
-	font-family: 'Montserrat',sans-serif;
+button {
+	flex: 0.5;
+	align-self: center;
+	background-color: #fff;
+	border: 1px solid #eee;
+	padding: 12px 20px 12px 20px;
+	font-family: 'Open Sans',sans-serif;
 	font-weight: lighter;
-	background-image: url("../images/desk.jpg");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+	font-size: 1em;
+	width: 150px;
+	height: 100px;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	color: #333;
+
+	transition: 0.15s ease-in-out;
+	-webkit-transition: 0.15s ease-in-out;
+	-moz-transition: 0.15s ease-in-out;
+	-o-transition: 0.15s ease-in-out;
 }
 
-footer {
-	text-align: center;
-	font-family: 'Lora',sans-serif;
-	font-weight: lighter;
-	padding: 10px;
+button:hover {
+	box-shadow: inset 150px 0 0 0 black;
+	color: #eee;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: 0;
 }
 
 a {
-	margin: 0 auto;
 	text-decoration: none;
 	border-bottom: 1px dotted #333;
 	font-style: bold;
@@ -97,8 +65,41 @@ a:hover {
 a:focus {
 	outline: none;
 }
-.link {
+
+p {
+	margin: 5vw;
+	font-family: 'Lora',serif;
+	line-height: 1.7rem;
+}
+
+h1{
+	margin: 0 auto;
+	margin-top: 5vw;
 	text-align: center;
-	margin-top: 20px;
-	font-size: 1.5em;
+	font-size: 6em;
+	font-weight: bold;
+	font-family: 'Montserrat',serif;
+	background-image: url("../images/desk.jpg");
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+}
+
+
+h2 {
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: lighter;
+	background-image: url("../images/desk.jpg");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+footer {
+	text-align: center;
+	font-family: 'Lora',sans-serif;
+	font-weight: lighter;
+	padding: 10px;
 }

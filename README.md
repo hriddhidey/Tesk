@@ -1,5 +1,5 @@
 
-<h1> Tesk 2.</h1>
+<h1> Tesk</h1>
 
 <p>
 The aim of our platform is to provide creative individuals with a portal to express themselves in a distraction-free environment, without any hindrance, or unnecessary infringements. We like to keep the focus on the stuff that matters - the content, and the experience of writing your heart out. 
