@@ -2,6 +2,11 @@ var data="";
 var voiceOn = false;
 var editor = new MediumEditor('.editable');
 var voiceButton  = document.querySelector("#mic");
+var recognition = new (
+	window.SpeechRecognition || 
+	window.webkitSpeechRecognition || 
+	window.mozSpeechRecognition || 
+	window.msSpeechRecognition)()
 
 function voiceClicked() {
 	if (voiceOn == false) {
@@ -12,16 +17,13 @@ function voiceClicked() {
 	else {
 		voiceButton.innerHTML = "MIC OFF";
 		voiceOn = false;
+		data = e.results[0][0].transcript;
+		recognition.stop()
+		writeTranslated()
 	}
 }
 
 function startDictation() {
-
-	var recognition = new (
-		window.SpeechRecognition || 
-		window.webkitSpeechRecognition || 
-		window.mozSpeechRecognition || 
-		window.msSpeechRecognition)()
 
     recognition.interimResults = false
 	recognition.lang = "en-US"
